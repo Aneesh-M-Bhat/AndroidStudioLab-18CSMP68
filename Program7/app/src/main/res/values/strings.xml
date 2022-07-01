@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Program7</string>
+    <string name="sign_up_activity">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="log_in">Login</string>
+    <string name="password">Password</string>
+    <string name="log_in_activity">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in_successful">Login Successful</string>
+</resources>
