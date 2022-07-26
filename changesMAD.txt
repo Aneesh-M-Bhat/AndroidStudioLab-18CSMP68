@@ -1,0 +1,38 @@
+https://github.com/Raghuvorkady/MAD-LAB-Programs
+
+Calculator 
+public void clear(View V){
+	e1.setText("");
+}
+public void changeEditText(View V){
+        Button btn = (Button)findViewById(V.getId());
+        e1.setText(e1.getText()+btn.getText().toString());
+    }
+    public void calc(View V){
+        String str = e1.getText().toString();
+        Pattern p = Pattern.compile("[-+*/]");
+        Matcher m = p.matcher(str);
+        int op = str.indexOf(m.group(0));
+        int num1 = Integer.parseInt(str.substring(0,op));
+        int num2 = Integer.parseInt(str.substring(op+1));
+        double res = 0;
+        switch(str.charAt(op)){
+            case '+':res=num1+num2;break;
+            case '-':break;
+            case '*':break;
+            case '/':break;
+        }
+        e1.setText(res+"");
+    }
+
+Vising Card (Wht is there to learn)
+Counter (Same since its direct)
+WallpaperManager (Same since its direct)
+SignIn SignUp (Same since its direct)
+Call and Save 
+public void addValue(View V){
+        Button btn = (Button)findViewById(V.getId());
+        editText.setText(editText.getText()+btn.getText().toString());
+    }
+
+TextToSpeech
