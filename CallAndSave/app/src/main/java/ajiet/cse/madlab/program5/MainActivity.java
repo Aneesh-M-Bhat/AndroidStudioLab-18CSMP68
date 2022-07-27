@@ -39,12 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
                 intent.putExtra(ContactsContract.Intents.Insert.PHONE, phone);
             }
-            if(intent.resolveActivity(getPackageManager()) != null) {
                 startActivity(intent);
-            }
-            else {
-                Toast.makeText(MainActivity.this, "There Is No App That Support's This Action!", Toast.LENGTH_SHORT).show();
-            }
         }
     }
     public void addText (View view){
